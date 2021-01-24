@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 test_webdriver = webdriver.Chrome(chrome_options=chrome_options)
 test_webdriver.maximize_window()
-test_webdriver.get('http://www.woyao998.com/')
+test_webdriver.get('http://old.woyao998.com/')
 test_webdriver.find_element_by_xpath('//input[@id="username"]').send_keys('youcom')
 test_webdriver.find_element_by_xpath('//input[@id="password"]').send_keys('0591chen')
 test_webdriver.find_element_by_xpath('//img[@class="captcha"]')
@@ -25,7 +25,7 @@ while True:
             i += 1
             el.click()
             print(i)
-            time.sleep(40)
+            time.sleep(50)
             test_webdriver.get('http://www.woyao998.com/surf.html')
             time.sleep(5)
             continue

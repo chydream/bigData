@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pandas_datareader.data as web
 import datetime
-import tushare as ts
+import t_demo as ts
 # e = ts.get_hist_data('000725',start='2020-06-23',end='2020-06-26')
 # print(e.head())
 
@@ -13,5 +13,5 @@ pro = ts.pro_api()
 
 #查询当前所有正常上市交易的股票列表
 
-data = pro.stock_basic(exchange='', list_status='L', fields='ts_code,symbol,name,area,industry,list_date')
-print(data)
+# data = pro.stock_basic(exchange='', list_status='L', fields='ts_code,symbol,name,area,industry,list_date')
+# print(data)
